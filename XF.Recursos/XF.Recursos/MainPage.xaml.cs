@@ -73,5 +73,10 @@ namespace XF.Recursos
         {
             await Navigation.PushAsync(new Lista.ListaEtiquetaView());
         }
+
+        private async void btnLocation_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GPS.CoordenadaView());
+        }
     }
 }
